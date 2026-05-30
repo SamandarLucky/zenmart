@@ -33,6 +33,49 @@
   line-height: 22px;
   text-transform: capitalize;
 }
+/*PAGINATION*/
+.container .pagination_box {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pagination_main img {
+  cursor: pointer;
+}
+.container .pagination_box .pagination_main {
+  width: 160px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .pagination_main .pagination_dot {
+  display: flex;
+  flex-direction: row;
+}
+.container .pagination_dot .dot {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.container .pagination_dot .dot.active {
+  border: 2px solid rgba(17, 33, 55, 1);
+}
+.container .pagination_dot .dot div {
+  height: 4px;
+  width: 4px;
+  background: rgba(17, 33, 55, 1);
+  border-radius: 50%;
+}
+
 /*HEADERFRAME*/
 .header_frame {
   position: relative;
@@ -333,6 +376,7 @@
   width: 25px;
 }
 .next_prev_box img {
+  cursor: pointer;
   position: absolute;
   top: 50%;
 }
