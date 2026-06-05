@@ -685,9 +685,15 @@ p {
 }
 .apps a {
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 .apps span {
   margin-left: 22px;
+}
+.apps img {
+  width: 19px;
+  height: 15px;
 }
 
 .footer_media_main .card_box {
