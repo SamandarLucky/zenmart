@@ -10,6 +10,7 @@ body {
 
 a {
   text-decoration: none;
+  color: rgba(4, 30, 66, 1);
 }
 p {
   margin: 0;
@@ -21,7 +22,57 @@ p {
   height: auto;
   display: flex;
 }
+/*PAGINATION BOX*/
+.container .pagination_box {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.pagination_main img {
+  cursor: pointer;
+}
+.container .pagination_box .pagination_main {
+  width: 160px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .pagination_main .pagination_dot {
+  display: flex;
+  flex-direction: row;
+}
+.container .pagination_dot .dot {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.container .pagination_dot .dot.active {
+  border: 2px solid rgba(17, 33, 55, 1);
+}
+.container .pagination_dot .dot div {
+  height: 4px;
+  width: 4px;
+  background: rgba(17, 33, 55, 1);
+  border-radius: 50%;
+}
+.container .next_prev_box {
+  width: 25px;
+}
+.container .next_prev_box img {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
 /*NabarFrame*/
 
 .navbar_frame {
@@ -237,12 +288,6 @@ p {
   margin-left: 10px;
 }
 
-/*HOMEPAGE*/
-.home_page {
-  padding-bottom: 60px;
-  display: flex;
-  flex-direction: column;
-}
 /*HEADERFRAME*/
 .header_frame {
   position: relative;
@@ -488,7 +533,6 @@ p {
 
 .shop_category_frame .category_top a {
   color: rgba(4, 30, 66, 1);
-
   font-family: var(--font);
   font-style: normal;
   font-size: 15px;
@@ -514,6 +558,7 @@ p {
   height: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .shop_category_frame .category_box .category_image_box {
   width: 100%;
