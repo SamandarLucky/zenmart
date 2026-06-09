@@ -1,3 +1,9 @@
+.all_product_page {
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
 /*PRODUCTS FRAME*/
 .products_frame {
   width: 100%;
@@ -158,4 +164,105 @@
   font-size: 28px;
   font-weight: 500;
   line-height: 40px;
+}
+
+/*TOP SELLING ITEMS*/
+
+.top_selling_items {
+  margin-left: 195px;
+  position: relative;
+  margin-top: 30px;
+  width: 1320px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.top_selling_items .item_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border: 1px solid rgba(234, 234, 234, 1);
+  background: rgba(255, 255, 255, 1);
+}
+.top_selling_items .item_box .product_img {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  width: 180px;
+  height: 190px;
+}
+.top_selling_items .item_box .review_box img {
+  margin-right: 4px;
+}
+.top_selling_items .item_box .review_box {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.top_selling_items .item_box .review_box span {
+  margin-left: 10px;
+  color: rgba(98, 105, 116, 1);
+  font-family: var(--font);
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.top_selling_items .item_box .item_content_box .price_box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.top_selling_items .item_box .price_box strong {
+  color: rgba(4, 30, 66, 1);
+  font-family: var(--font);
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.top_selling_items .item_box .price_box span {
+  color: rgba(98, 105, 116, 1);
+  margin-left: 10px;
+  font-family: var(--font);
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration-line: line-through;
+}
+.top_selling_items .item_box p {
+  color: rgba(4, 30, 66, 1);
+  font-family: var(--font);
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.top_selling_items .item_box .product_content_box .product_title {
+  color: rgba(98, 105, 116, 1);
+  font-family: var(--font);
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.item_box .product_content_box {
+  padding: 5px 22px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+.product_content_box .product_desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

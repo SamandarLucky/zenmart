@@ -118,43 +118,6 @@
   line-height: 22px;
 }
 
-.container .review_box img {
-  margin-right: 5px;
-}
-.container .review_box span {
-  margin-left: 10px;
-  color: rgba(98, 105, 116, 1);
-  font-family: var(--font);
-  font-style: normal;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-}
-.container .product_content_box .price_box {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.container .price_box strong {
-  color: rgba(4, 30, 66, 1);
-
-  font-family: var(--font);
-  font-style: normal;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 26px;
-}
-.container .price_box span {
-  color: rgba(98, 105, 116, 1);
-  margin-left: 10px;
-  font-family: var(--font);
-  font-style: normal;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  text-decoration-line: line-through;
-}
 /*HEADERFRAME*/
 .header_frame {
   position: relative;
